@@ -1,8 +1,7 @@
-
 Feature: User registration at MyStore application
 
 @SmokeTest
-Scenario outline: Register user with valid email address
+Scenario: Register user with valid email address
 GIVEN  MyStore Application is opened
 WHEN   User clicks Sign in link
 AND    User enters valid email address
@@ -13,10 +12,10 @@ THEN   User verifies that Registration is successful
 AND    User verifies the FirstName and LastName at My Account page
 
 @RegressionTest
-Scenario outline: Register user with invalid email address
+Scenario: Register user with invalid email address
 GIVEN  MyStore Application is opened
 WHEN   User clicks Sign in link
-AND    User enters "<invalid-email>" address
+AND    User enters <invalid-email> address
 AND    User clicks on Create an account button
 THEN   User verifies the registration error message.
 
