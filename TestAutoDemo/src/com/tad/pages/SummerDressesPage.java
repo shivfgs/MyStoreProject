@@ -1,22 +1,17 @@
 package com.tad.pages;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import com.tad.base.TestBase;
 import com.tad.util.ExcelUtil;
 
-
-public class MyAccountPage {
-
+public class SummerDressesPage {
 	
 	@FindBy(id="myaccount")
 	WebElement lblMyAccount;
 	
 	private WebDriver driver;
+	
+	
 /*
 * Function Name : verifyMyAccount
 * Description: This function will verify the Fname and Lname avaialble on myAccount Page
@@ -38,7 +33,7 @@ public class MyAccountPage {
 	 * Parameters: Web driver
 	 * Author: Shiv
 	 * */
-	public MyAccountPage(WebDriver driver) throws Exception {
+	public SummerDressesPage(WebDriver driver) throws Exception {
 		this.driver=driver;
 		initializeWebElements();
 	}
@@ -53,4 +48,5 @@ public class MyAccountPage {
 	}
 	
 	
+
 }
