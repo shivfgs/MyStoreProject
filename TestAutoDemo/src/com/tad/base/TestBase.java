@@ -18,7 +18,7 @@ public class TestBase {
 	public static Properties prop;
 	//new File(TestUtil.FILE_PATH+TestUtil.Config_FILE_NAME)
 	public TestBase(String filePath) throws Exception {
-		
+		// to read from property class
 		prop=new Properties();
 		try {
 			FileInputStream fis=new FileInputStream(filePath);
